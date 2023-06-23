@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.header{
+    background-color: blue;
+}
+img{
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    /* border: 5px solid; */
+    box-shadow: 10px 10px 10px 2px rgb(126, 122, 122);
+    border-radius: 5px;
+    margin: 15px;
+    
+}
+.dia{border: black solid;}
+a:hover {
+    font-size: 1.5em;
+    animation: shrink 1s infinite;
+    text-decoration: underline;}
+img:hover, .content_recipe {
+    width: 450px;
+    animation: shrink 5s infinite;
+    transition:  1s;
+    }
+.images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content_recipe{
+    /*background-color: aquamarine;*/
+    align-items: center;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .barnav a {
+        width: 100%;
+        border-bottom: rgb(189, 228, 228) solid;
+        float: right;
+    }
+    .text{
+        font-size: 40px;
+        
+        font-weight: 800;
+    }
+    footer{
+        font-size: 25px;
+    }
+  }
+@media screen and (min-width: 800px){
+    .barnav {
+        margin: 0 auto;
+        background-color: rgb(175, 79, 79);
+        display: flex;
+        justify-content: center;
+    }
+  }
+@media screen and (min-width: 1200px) {
+      .barnav  {
+        background-color: rgb(228, 56, 56);
+        margin: 0 auto;
+        width: 100%;
+        text-align: right;
+        border-radius: 0;
+    }
+
+  }
