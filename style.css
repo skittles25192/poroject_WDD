@@ -1,18 +1,40 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 body{
-    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
-.header{
-    background-color: blue;
+.main_tittle{
+    height: 150px;
+    text-align: center;
+    
 }
+nav a{
+    color:#000000;
+    font-size:1.1em;
+    text-decoration:none;
+  }
+header{
+    display:grid;
+    grid-template-columns:100px auto;
+    align-items:center;
+    background-color: #E05C0D;
+  }
+  nav ul{
+    margin: 0;
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(6em,1fr ));
+  }
+
 img{
     width: 400px;
     max-width: 100%;
     height: auto;
-    /* border: 5px solid; */
     box-shadow: 10px 10px 10px 2px rgb(126, 122, 122);
     border-radius: 5px;
     margin: 15px;
-    
 }
 .dia{border: black solid;}
 a:hover {
@@ -35,8 +57,6 @@ img:hover, .content_recipe {
     align-items: center;
     text-align: center;
 }
-
-
 
 @media screen and (max-width: 750px) {
     .barnav a {

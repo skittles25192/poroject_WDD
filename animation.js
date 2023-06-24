@@ -1,1 +1,0 @@
-document.getElementById("nuevo").innerHTML = "hola josu";
